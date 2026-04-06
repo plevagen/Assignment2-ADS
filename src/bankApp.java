@@ -23,7 +23,8 @@ public class bankApp {
     }
 
     private static void bankMenu(){
-        System.out.println("1. Open Account Request| 2. Bill Payment");
+        System.out.println("1. Open Account Request");
+        System.out.println("2. Open a Bill Payment");
         int op = sc.nextInt();
         sc.nextLine();
         if(op == 1){
