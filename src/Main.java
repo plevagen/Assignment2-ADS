@@ -8,7 +8,6 @@ public class Main {
         initialArray[2] = new BankAccount("103", "Phill", 29000);
 
         for(BankAccount acc : initialArray){
-            System.out.println("Added from array: " + acc);
             system.addAccountDirectly(acc);
         }
 
