@@ -49,11 +49,11 @@ public class BankingSystem{
 
     public void requestNewAccount(String name) {
         String id = "ACC" + (accounts.size() + accountRequests.size() + 1);
-        accountRequests.add(new BankAccount(id, name, 0)); // Task 5 [cite: 62]
+        accountRequests.add(new BankAccount(id, name, 0));
     }
 
     public void addBill(String billName) {
-        billQueue.add(billName); // Task 4 [cite: 54]
+        billQueue.add(billName);
     }
 
     public LinkedList<BankAccount> getAccounts() { return accounts; }

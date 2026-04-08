@@ -91,12 +91,18 @@ public class MenuHandler {
                     BankAccount newAcc = system.getAccountRequests().poll();
                     system.addAccountDirectly(newAcc);
                     System.out.println("Account created for " + newAcc.username);
-                } else System.out.println("No pending requests.");
+                }
+                else {
+                    System.out.println("No pending requests.");
+                }
             }
             case 2 -> {
                 if (!system.getBillQueue().isEmpty()) {
                     System.out.println("Processing: " + system.getBillQueue().poll());
-                } else System.out.println("No bills in queue.");
+                }
+                else{
+                    System.out.println("No bills in queue.");
+                }
             }
             case 3 -> system.getAccounts().forEach(System.out::println);
         }
